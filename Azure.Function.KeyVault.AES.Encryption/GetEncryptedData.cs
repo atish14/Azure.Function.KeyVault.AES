@@ -1,18 +1,17 @@
-using System;
-using System.IO;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Azure.WebJobs;
-using Microsoft.Azure.WebJobs.Extensions.Http;
-using Microsoft.AspNetCore.Http;
-using Microsoft.Extensions.Logging;
-using Newtonsoft.Json;
-using System.Security.Cryptography;
-using Azure.Function.KeyVault.AES.Common.Interfaces;
-using Azure.Function.KeyVault.AES.Common.Models;
-
 namespace Azure.Function.KeyVault.AES.Encryption
 {
+    using System;
+    using System.IO;
+    using System.Threading.Tasks;
+    using Microsoft.AspNetCore.Mvc;
+    using Microsoft.Azure.WebJobs;
+    using Microsoft.Azure.WebJobs.Extensions.Http;
+    using Microsoft.AspNetCore.Http;
+    using Microsoft.Extensions.Logging;
+    using System.Security.Cryptography;
+    using Azure.Function.KeyVault.AES.Common.Interfaces;
+    using Azure.Function.KeyVault.AES.Common.Models;
+
     public class GetEncryptedData
     {
         private readonly IAzureKeyVaultHelper _azureKeyVaultHelper;

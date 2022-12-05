@@ -1,14 +1,9 @@
-﻿using Azure.Function.KeyVault.AES.Common.Interfaces;
-using Azure.Security.KeyVault.Secrets;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Azure.Function.KeyVault.AES.Common.Helpers
+﻿namespace Azure.Function.KeyVault.AES.Common.Helpers
 {
+    using System.Net;
+    using Azure.Function.KeyVault.AES.Common.Interfaces;
+    using Azure.Security.KeyVault.Secrets;
+
     public class AzureKeyVaultHelper : IAzureKeyVaultHelper
     {
         private readonly SecretClient _secretClient;

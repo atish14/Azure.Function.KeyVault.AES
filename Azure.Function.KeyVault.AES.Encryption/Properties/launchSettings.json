@@ -1,0 +1,13 @@
+{
+  "profiles": {
+    "Azure.Function.KeyVault.AES.Encryption": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker",
+      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}",
+      "httpPort": 34835,
+      "useSSL": false
+    }
+  }
+}
